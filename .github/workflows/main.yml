@@ -11,14 +11,14 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: amirhossainau/hello-world-javascript-action@v1.9
+        uses: amirhossainau/hello-world-javascript-action@v1.10
         with:
           who-to-greet: 'Mona the Octocat'
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
       # Use the output from the `jwttok` step
-      - name: Get the output time
+      - name: Get the jwt token time
         run: echo "The jwtk was ${{ steps.hello.outputs.jwttok }}"
       # Runs a single command using the runners shell
       - name: Run a one-line script
