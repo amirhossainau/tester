@@ -17,6 +17,9 @@ jobs:
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
+      # Use the output from the `jwttok` step
+      - name: Get the output time
+        run: echo "The jwtk was ${{ steps.hello.outputs.jwttok }}"
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
